@@ -1,0 +1,306 @@
+/* Common styles */
+
+html {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+div {
+    padding: 5px;
+}
+
+h2 {
+    margin: 30px 30px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: large;
+    font-weight: 550;
+}
+
+input {
+    border-radius: 4px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+/* Navbars */
+
+li {
+    margin: 5px;
+}
+
+.navbar-dark li a {
+    color: white;
+}
+
+
+
+/* Green buttons */
+
+.btn {
+    border-radius: 4px;
+    background-color: #4C9825;
+    border: none;
+    color: white;
+}
+
+.btn:hover {
+	background-color: #336719;
+	color: white;
+}
+
+
+
+/* 'Go to the top of the page' button */
+
+#topbtn {
+    display: none; 
+    position: fixed;
+    bottom: 30px; 
+    right: 5%; 
+    border: none;
+    border-radius: 50%;
+    background-color: #4C9825; 
+    color: white; 
+    cursor: pointer; 
+    padding: 10px 20px 10px 20px; 
+    font-size: 2rem; 
+    font-weight: bold;
+}
+
+
+
+/* Main image of the page */
+
+h1 {
+    color: white;
+    margin: 20px;
+}
+
+#imgmain {
+    background-image: url("https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849826_960_720.jpg");
+    background-size: cover;
+    max-width: 100%;
+    height: 70%;
+    padding: 10%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+
+
+/* Three columns: Company, Products & Contact Us */
+
+.pic {
+    position: relative;
+    max-width: 100%;
+}
+
+.pic img {
+    border-radius: 8px;
+    filter: brightness(0.6);
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: none;
+    background-color: lightgray;
+    position: relative;
+}
+
+.pic img:hover {
+    opacity: 0.5;
+}
+
+.picbtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    padding: auto;
+    transform: translate(-50%, -50%);
+    border: none;
+    color: white;
+    font-size: x-large;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.picbtn:hover {
+    border-radius: 4px;
+    color: white;
+    border: 3px solid lightgray;
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+
+
+/* Number counters */
+
+.numbers {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#counter_1, #counter_2, #counter_3 {
+    font-size: xx-large;
+}
+
+.numbers .bi {
+    color: #4C9825;
+    font-size: 3rem;
+}
+
+.numbers .bi:hover {
+    cursor: pointer;
+}
+
+
+
+/* Latest news */
+
+.latest-news {
+    background-color: #e6e6e6;
+    margin: 15px;
+    padding: 30px;
+}
+
+.news {
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    background-color: white;
+    margin: 15px;
+    padding: 25px;
+    position: relative;
+    width: 27%;
+    height: auto;
+    display: block;
+    text-align: start;
+}
+
+.news a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* References */
+
+.card {
+    width: 20%;
+    display: block;
+    margin: 10px;
+    padding: 10px 10px 30px 10px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.card img  {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    display: block;
+}
+
+
+
+/* Footer section */
+
+footer {
+    color: white;
+    background-color: black;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    padding-right: 20px;
+    text-align: start;
+    width: 100%;
+}
+
+#socials {
+    padding-right: 30px;
+}
+
+footer i {
+    color: #4C9825;
+    background-color: black;
+    font-size: 2rem;
+    margin: 3px;
+    border-radius: 50px;
+    float: right;
+}
+
+
+
+/* Responsiveness - the three columns: Company, Products & Contact Us */
+
+@media screen and (max-width: 1000px) {  
+	.pic {
+		width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+		}
+} 
+
+
+
+/* Responsiveness - Latest news */
+
+@media screen and (max-width: 950px) {  
+	.news {
+		width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+		}
+} 
+
+
+
+/* Responsiveness - References */
+
+@media screen and (max-width: 1309px) {
+    
+    .card img {
+        max-width: 70%;
+        height: auto;
+        margin: auto;
+        padding: 5px;
+        display: block;
+    }
+
+    .card {
+        display: block;
+        width: 45%;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .card img {
+        max-width: 50%;
+        height: auto;
+        margin: auto;
+        padding: 5px;
+        display: block;
+    }
+
+    .card {
+        display: block;
+        width: 70%;
+        margin: 10px;
+    }
+}

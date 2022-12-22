@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Liana Technologies</title>
+        <link rel="icon" type="image/x-icon" href="https://www.lianatech.com/media/layout/img/logos/logo.svg">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Scripts: the first one is mine and the Bootstrap's one was needed for the language choice dropdown -->
+        <script src="myscript.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <!-- Navigation bars -->
+        <nav class="navbar navbar-expand-sm navbar-dark d-flex justify-content-end" style="background-color:#4C9825; color: white;">
+            <div class="navbar">
+                <ul class="nav navbar-nav me-5">
+                    <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Intranet</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle justify-content-start" href="#" role="button" data-bs-toggle="dropdown" 
+                        style="color:black; background-color: white; border-radius: 8px;">In English</a>
+                        <ul class="dropdown-menu" style="background-color: lightgray; color: black;">
+                            <li><a class="dropdown-item" href="#">Suomeksi</a></li>
+                            <li><a class="dropdown-item" href="#">på svenska</a></li>
+                            <li><a class="dropdown-item" href="#">auf Deutsch</a></li>
+                            <li><a class="dropdown-item" href="#">en français</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="https://www.lianatech.com/media/layout/img/logos/logo.svg" alt="Liana_logo" style="width: 150px; height: 100px;">
+                </a>
+			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" 
+                aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation" style="color: #4C9825;">
+				    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+				    <ul class="navbar-nav me-auto">
+					    <li class="nav-item">
+                            <a class="nav-link" href="#">Company</a>
+					    </li>
+					    <li class="nav-item">
+                            <a class="nav-link" href="#">Products</a>
+					    </li>
+					    <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+					    </li>
+                    </ul> 
+                    <form class="d-flex justify-content-end">
+                        <input class="form-control" type="search" placeholder="Search">
+                        <input class="btn" type="submit" value="Search" style="margin-left: 10px;">
+                    </form> 
+				</div>
+            </div>
+		</nav>
+
+        <!-- Go to the top of the page button -->
+        <button onclick="toTop()" id="topbtn">
+            <i class="bi bi-arrow-up"></i>
+        </button>
+
+        <!-- Main image of the page -->
+        <div class="container-fluid text-center" id="imgmain">
+            <h1>Software fueling digital marketing</h1>
+            <a href="#" class="btn">Learn more</a>
+        </div>
+        <!-- Three pictures -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 pic">
+                    <img src="https://cdn.pixabay.com/photo/2017/01/14/10/56/people-1979261_960_720.jpg" alt="Company">
+                    <a href="#" class="picbtn">Company</a>
+                </div>
+                <div class="col-md-4 pic">
+                    <img src="https://cdn.pixabay.com/photo/2015/06/24/15/45/hands-820272_960_720.jpg" alt="Products">
+                    <a href="#" class="picbtn">Products</a>
+                </div>
+                <div class="col-md-4 pic"> 
+                    <img src="https://cdn.pixabay.com/photo/2012/02/23/09/11/call-15924_960_720.jpg" alt="Contact Us">
+                    <a href="#" class="picbtn">Contact Us</a>   
+                </div>
+            </div> 
+        </div>
+        <!-- Number counter -->
+        <div class="container numbers">
+            <div class="row">
+                <div class="col-sm-4">
+                    <i class="bi bi-briefcase-fill" onmouseover="countClients()"></i>
+                    <p id="counter_1"></p>
+                    <p>Clients</p>
+                </div>
+                <div class="col-sm-4">
+                    <i class="bi bi-person-fill" onmouseover="countEmployees()"></i>
+                    <p id="counter_2"></p>
+                    <p>Employees</p>
+                </div>
+                <div class="col-sm-4">
+                    <i class="bi bi-globe-americas" onmouseover="countUsers()"></i>
+                    <p id="counter_3"></p>
+                    <p>Daily users</p>              
+                </div>
+            </div>
+        </div>
+        <!-- Latest news -->
+        <div class="container-fluid latest-news">
+            <h2>Latest news</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4 news">
+                    <p>14.11.2022</p>
+                    <a href="https://www.lianatech.com/resources/blog/email-marketing-tool-comparison-what-to-consider-and-how-to-choose.html" 
+                    target="_blank" style="font-weight: 600;">Email Marketing Tool Comparison – What to Consider and How to Choose</a>
+                </div>
+                <div class="col-md-4 news">
+                    <p>19.10.2022</p>
+                    <a href="https://www.lianatech.com/resources/blog/why-should-you-use-whatsapp-together-with-marketing-automation.html" 
+                    target="_blank" style="font-weight: 600;">Why Should You Use WhatsApp Together with Marketing Automation?</a>
+                </div>
+                <div class="col-md-4 news">
+                    <p>05.08.2022</p>
+                    <a href="https://www.lianatech.com/resources/blog/3-ways-to-start-listening-to-social-media.html" 
+                    target="_blank" style="font-weight: 600;">3 Ways to Start Listening to Social Media</a>             
+                </div>
+            </div>
+        </div>
+        <!-- References -->
+        <div class="container">
+            <h2>References</h2>
+            <div class="row  d-flex justify-content-center references">
+                <div class="col-xl-3 card">
+                    <img src="https://live.staticflickr.com/5335/7059912955_121f232193_b.jpg" 
+                    alt="Bosch_logo" style="width: 50%; height: 50%;">
+                    <hr />
+                    <h3>Robert Bosch</h3>
+                    <p>Bosch is a multinational engineering and electronics company.</p>
+                </div>
+                <div class="col-xl-3 card">
+                    <img src="https://www.thebodyshop.fi/media/logo/stores/1/tbs-logo.png" 
+                    alt="The_Body_Shop_logo" style="width: 50%; height: 50%;">
+                    <hr />
+                    <h3>The Body Shop</h3>
+                    <p>The Body Shop is a global beauty brand and it has more than 3,000 stores in more than 60 countries.</p>
+                </div>
+                <div class="col-xl-3 card">
+                    <img src="https://pbs.twimg.com/profile_images/712245197757927425/pScI_HbB_400x400.jpg" 
+                    alt="Lapland_Hotel_logo" style="width: 50%; height: 50%;">
+                    <hr />
+                    <h3>Lapland Hotels</h3>
+                    <p>Lapland Hotels is the largest and the most diverse hotel chain in Lapland.</p>              
+                </div>
+                <div class="col-xl-3 card">
+                    <img src="https://www.ikea.com/images/ikea-tavaratalo-sinistae-taivasta-vasten-ce4d20d3b42b6bbd532238495d73f0d5.jpg?f=sg" 
+                    alt="Ikea_logo" style="width: 50%; height: 50%;">
+                    <hr />
+                    <h3>IKEA</h3>
+                    <p>IKEA is a multinational furniture store.</p>             
+                </div>
+            </div>
+        </div>
+        <!-- Newsletter subscription -->
+       <hr> 
+        <div class="container-fluid" style="padding: auto;">
+            <h2>Subscribe to our newsletter</h2>
+            <p>Follow our story and get the latest promotonial<br> news about our products and events.</p>
+            <form name="emailForm" method="post">
+                <input type="email" name="email" placeholder="Your email address">
+                <input type="submit" class="btn" value="Subscribe" onclick="return validateEmail()">
+            </form>
+        </div>
+        <!-- Footer: bottom navigation and contact information -->
+        <footer>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        Liana Technologies
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bottomnav" 
+                    aria-controls="bottomnav" aria-expanded="false" aria-label="Toggle navigation" style="color: #4C9825;">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="bottomnav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Company</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="#">Products</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="#">Contact Us</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="#">News</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="#">Intranet</a>
+                             </li>
+                        </ul> 
+                    </div>
+                </div>
+            </nav>
+            <div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>Sales and inquiries</h4>
+                        <p>Email: sales@lianatech.com</p>
+                        <p>Phone: +358 10 387 7053</p>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" class="btn">Contact us</a>
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-end" id="socials">
+                        <a href="https://www.facebook.com/LianaTechFI" target="_blank">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/LianaTech_FI" target="_blank">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/liana-technologies" target="_blank">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                  </div>
+            </div>
+        </footer>
+    </body>
+</html>
